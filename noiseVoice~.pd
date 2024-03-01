@@ -6,8 +6,8 @@
 #X obj 156 221 list prepend;
 #X obj 156 245 route 1;
 #X obj 156 269 s \$0-midi;
-#X obj 539 296 r \$0-midi;
-#X obj 540 370 sig~;
+#X obj 530 212 r \$0-midi;
+#X obj 531 286 sig~;
 #X obj 540 394 mtof~;
 #X obj 301 184 t f f f;
 #X obj 356 218 select 1 0;
@@ -79,13 +79,15 @@
 #X obj 461 422 else/resonant~ 1000 40;
 #X obj 217 387 *~ 8;
 #X obj 149 558 else/fbdelay~ 40 0.9 1;
+#X obj 916 584 outlet~;
+#X obj 531 310 +~;
 #X connect 0 0 23 0;
 #X connect 1 0 3 0;
 #X connect 1 1 22 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
 #X connect 7 0 8 0;
-#X connect 8 0 9 0;
+#X connect 8 0 81 0;
 #X connect 9 0 76 1;
 #X connect 9 0 77 1;
 #X connect 10 0 4 1;
@@ -105,6 +107,8 @@
 #X connect 19 0 20 1;
 #X connect 20 0 15 1;
 #X connect 20 0 75 1;
+#X connect 20 0 80 0;
+#X connect 20 0 81 1;
 #X connect 22 0 10 0;
 #X connect 23 0 4 0;
 #X connect 23 1 1 0;
@@ -164,3 +168,4 @@
 #X connect 78 0 74 0;
 #X connect 79 0 66 0;
 #X connect 79 0 48 0;
+#X connect 81 0 9 0;
