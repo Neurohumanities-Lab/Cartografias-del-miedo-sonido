@@ -1,5 +1,12 @@
 # Cartografias-del-miedo-sonido
 
+## To do
+* Integración de respiraciones y gritos
+* Acumulación exponencial de fear index
+* Integración de otros ruidos, como estruendos, rechinidos, susurros, insectos
+
+
+
 ## Capas de sonido
 
 * Aullidos de viento (fondo): vinculado al indice miedo
