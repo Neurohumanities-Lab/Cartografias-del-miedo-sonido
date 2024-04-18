@@ -1,0 +1,15 @@
+#N canvas 363 40 1920 997 12;
+#X obj 353 248 noise~;
+#X obj 490 183 loadbang;
+#X obj 328 545 outlet~;
+#X obj 378 345 else/resonant~ 1000 1.4;
+#X obj 431 207 inlet;
+#X obj 490 207 else/rand.f 100 16000;
+#X obj 354 272 pow~ 1e+06;
+#X obj 576 576 outlet~;
+#X connect 0 0 6 0;
+#X connect 1 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 6 1;
+#X connect 5 0 3 1;
+#X connect 6 0 3 0;

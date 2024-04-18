@@ -1,0 +1,6 @@
+acum valence arousal dominance;
+sin miedo 1 -1 1;
+poco miedo 0.33 -0.33 0.33;
+medio alto -0.33 0.33 -0.33;
+muy alto -1 1 -1;
+
